@@ -5,6 +5,8 @@ using namespace std;
  **Repeation Recursive call na hole recursive call ke Optimized/Memoized korar scope thake na. Memoize korar scope na thakle Dynamic Programming hoy na.
  Dynamic Programming recursive approach and looping approach ace.
  DPte Top-Down and Bottom-Up technique apply kora zay.
+
+ **Sub-problem: kuno ekti result zodi tar purbo borti result er upor depend kore and purbo borti result tar purbo borty result er upor depend kore tokhon setake sub-problem bola hoy.
 */
 int main(){
 
