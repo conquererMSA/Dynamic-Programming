@@ -4,10 +4,10 @@ int dp[5];
 int knapsacRec(int sz,int val[],int weight[], int w){
      if(sz==0) return 0;
      if(w<=0) return 0;
+     if(dp[sz]!=-1) return dp[sz];
      int take=knapsacRec(sz-1, val, weight, w-val[sz])+val[sz];
      int unTake=knapsacRec(sz-1, val, weight, w);
-     return max(take, unTake);
-
+     return dp[sz]=max(take, unTake);
 }
 int main(){
     int sz;
@@ -20,6 +20,7 @@ int main(){
     };
     int w;
     cin>>w;
+    memset(dp, -1, sizeof(dp));
     int ans=knapsacRec(sz, val, weight, w);
     cout<<ans<<endl;
     return 0;
