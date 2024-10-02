@@ -5,7 +5,7 @@ int knapsacRec(int sz,int val[],int weight[], int w){
      if(w<=0) return 0;
      int take=knapsacRec(sz-1, val, weight, w-val[sz])+val[sz];
      int unTake=knapsacRec(sz-1, val, weight, w);
-     return max(take, unTake);
+    //  return max(take, unTake);
 
 }
 int main(){
