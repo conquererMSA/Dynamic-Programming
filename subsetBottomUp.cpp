@@ -31,7 +31,7 @@ int main(){
         }
         cout<<endl;
     }
-    
+    //array er sob gulu value use kore s create kora possible hole true otherwise false.
     if(dp[n][s]) cout<<"YES"<<endl;
     else cout<<"NO"<<endl;
     return 0;
