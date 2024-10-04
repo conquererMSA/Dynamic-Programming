@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool subSetSum(int n, int a[], int s){
+    if(n==0){
+        if(s==0) return true;
+        else return false;
+    }
     //s theke zodi a er n index chuto/soman hoy tahole nite parbo
      if(a[n]<=s){
        bool op1=subSetSum(n-1, a, s-a[n]);
@@ -21,5 +25,7 @@ int main(){
     int s;
     cin>>s;
     bool ans=subSetSum(n-1, a, s);
+    if(ans) cout<<"YES"<<endl;
+    else cout<<"NO"<<endl;
     return 0;
 }
