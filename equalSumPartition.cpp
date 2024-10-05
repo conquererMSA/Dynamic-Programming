@@ -11,7 +11,7 @@ int main(){
     }
     if(sum%2==0){
        int s=sum/2;
-       bool dp[n][s];
+       bool dp[n+1][s+1];
        dp[0][0]=true;
        for(int i=1; i<=s; i++) dp[0][i]=false;
        for(int i=1; i<=n; i++){
