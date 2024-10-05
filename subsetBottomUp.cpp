@@ -14,7 +14,7 @@ int main(){
     for(int i=1; i<=s; i++){
         dp[0][i]=false;
     }
-    //i=1, j=0 hobe karon array value o hote pare.
+    //i=1, j=0 hobe karon array value 0 hote pare.
     for(int i=1; i<=n; i++){
         for(int j=0; j<=s; j++){
             if(a[i-1]<=j){
